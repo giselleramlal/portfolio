@@ -1,16 +1,19 @@
 import * as React from "react"
+import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-    <div className="bg-teal3">
-      <div>My name is </div>
-      <h1>Giselle Ramlal.</h1>
-      <p>A lil thing about me...</p>
-      <button className="bg-teal5 p-2 rounded border-2 border-teal1">Click me</button>
-    </div>
+    <Layout>
+      <div className="max-w-3xl h-3/4 p-24">
+        <div className="text-cyan-400">Hi, my name is </div>
+        <div className="text-8xl py-5 text-slate-300"> Giselle Ramlal.</div>
+        <p className="text-xl text-slate-400">I am a student at the University of Waterloo, currently persuing a Bachelor's of Software Engineering with a Diploma in Sustainability.</p>
+        <button className="border border-cyan-400 rounded p-4 text-xl my-4 text-slate-300">Get to know me</button>
+      </div>
+    </Layout>
   )
 }
 
-export default IndexPage
-
 export const Head = () => <title>Home Page</title>
+
+export default IndexPage
