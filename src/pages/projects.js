@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 const   ProjectsPage = () => {
   return (
     <Layout>
-        <div className='text-white'>
+        <div className='text-white max-w-3xl m-auto pt-12'>
             
             <div className='text-3xl p-3 text-center'>Some Projects I've worked on</div>
             <div>Chess</div>
